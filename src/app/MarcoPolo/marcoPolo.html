@@ -1,0 +1,21 @@
+<div class="container top-buffer">
+
+    <div class="row">
+        <h3> Write numbers between 1 to 100</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+        <input type="number" ng-model="vm.starting"  placeholder="Starting digit">
+        </div>
+        <div class="col-lg-3">
+            <input type="number" ng-model="vm.ending"  placeholder="Ending digit">
+        </div>
+    </div>
+    <div class="row top-buffer">
+        <button  type="button" class="btn btn-success" ng-click="vm.generateString()">Generate String</button>
+    </div>
+    <div class="row top-buffer">
+        {{vm.finalString}}
+    </div>
+</div>

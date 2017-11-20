@@ -1,0 +1,14 @@
+<div class="container top-buffer">
+
+    <div class="row">
+        <h3> Upload file </h3>
+    </div>
+
+    <h1>Select text file</h1>
+    <input type="file" on-read-file="vm.showContent($fileContent)" />
+    <h2 ng-if="vm.finalResult.length > 0">File content is:</h2>
+    <div ng-repeat="row in vm.finalResult">
+        <h5>{{ row }}</h5>
+    </div>
+
+</div>

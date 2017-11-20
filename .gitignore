@@ -1,0 +1,14 @@
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules/
+bower_components/
+# other
+.tmp
+logs/*
+!.gitkeep
+tmp
+.DS_Store
+.idea
+#src/client/index.html
+
+*.log

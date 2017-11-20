@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+  <!-- build:baseUrl -->
+  <base href="/">
+
+  <!-- endbuild -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Angular Starter Kit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enuke</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!--[if IE]>
+  <link rel="shortcut icon" href="favicon.ico">
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- build:css(./.tmp) css/main.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
+</head>
+
+<body>
+
+<div class="container">
+  <h3>Solutions ......</h3>
+</div>
+
+<div class="container">
+  <ul class="nav nav-pills">
+    <li class="active"><a href="/MarcoPolo">Marco Polo Solution</a></li>
+    <li><a href="/UserStory">User Story Solution</a></li>
+  </ul>
+</div>
+
+<!--<ul class="menu">-->
+  <!--<li><a href="/MarcoPolo">view1</a></li>-->
+  <!--<li><a href="/UserStory">view2</a></li>-->
+<!--</ul>-->
+
+  <!-- Main view for templates -->
+  <div ng-view></div>
+
+
+  <!-- build:main(./.tmp) js/main.min.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-aria/angular-aria.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-material/angular-material.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+
+    <script src="app/app.js"></script>
+    <script src="app/MarcoPolo/marcoPolo.controller.js"></script>
+    <script src="app/userStory/userStory.controller.js"></script>
+    <script src="app/fileUpload.directive.js"></script>
+
+    <!-- build:templates -->
+      <!-- minify and concatenate all template files -->
+    <!-- endbuild -->
+
+  <!-- endbuild -->
+
+  <script>
+    angular.element(document).ready(function() {
+      angular.bootstrap(document, ['app']);
+    });
+  </script>
+</body>
+</html>
