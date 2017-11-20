@@ -31,9 +31,9 @@ module.exports = function(config) {
       'src/app/MarcoPolo/marcoPolo.controller.js',
       'src/app/userStory/userStory.controller.js',
       'src/app/fileUpload.directive.js',
-      // 'src/app/routing.spec.js',
-       // 'src/app/MarcoPolo/marcoPolo.controller.spec.js',
-       // 'src/app/userStory/userStory.controller.spec.js',
+      'src/app/routing.spec.js',
+       'src/app/MarcoPolo/marcoPolo.controller.spec.js',
+       'src/app/userStory/userStory.controller.spec.js',
         'src/app/fileUpload.directive.spec.js'
 
     ],
